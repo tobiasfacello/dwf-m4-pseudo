@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 960px) {
+	.faq {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 100px auto;
+	}
+}
+
+.faq > h2 {
+	margin: 30px;
+	font-size: 38px;
+	font-weight: 700;
+	text-align: justify;
+}
+
+@media (min-width: 960px) {
+	.faq h2 {
+		align-self: flex-start;
+		margin: 30px 40px;
+		width: 190px;
+	}
+}
+
+.faq-list {
+	margin: 30px;
+	padding: 0;
+	list-style: none;
+}
+
+@media (min-width: 960px) {
+	.faq-list {
+		margin: 0;
+	}
+}
+
+@media (min-width: 960px) {
+	.faq-item {
+		width: 580px;
+	}
+}
+
+.faq-item-title::before {
+	content: ">";
+	font-family: "Roboto Mono", monospace;
+	font-size: 40px;
+	font-weight: 400;
+	color: #ff6262;
+}
+
+.faq-item-title {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.faq-item-title a {
+	text-decoration: none;
+	color: #000;
+}
+
+.faq-item-text {
+	font-size: 20px;
+	display: none;
+}
+
+.faq-item:target .faq-item-text {
+	display: inherit;
+}
